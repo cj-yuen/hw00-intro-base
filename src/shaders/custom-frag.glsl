@@ -59,7 +59,7 @@ void main() {
     vec3 colorC = vec3(0.8, 0.2, 0.6); // magenta
     vec3 colorD = u_Color.rgb;          // user color
 
-    // Blend between four colors based on noise
+    // Blend between 4 colors based on noise
     vec3 noisyColor = mix(colorA, colorB, smoothstep(0.0, 0.33, n));
     noisyColor = mix(noisyColor, colorC, smoothstep(0.33, 0.66, n));
     noisyColor = mix(noisyColor, colorD, smoothstep(0.66, 1.0, n));
