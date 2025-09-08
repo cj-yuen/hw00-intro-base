@@ -54,8 +54,8 @@ void main() {
     n = clamp(n, 0.0, 1.0);
 
     // Color palette blending
-    vec3 colorA = vec3(0.2, 0.4, 1.0); // blue
-    vec3 colorB = vec3(1.0, 0.8, 0.2); // yellow
+    vec3 colorA = vec3(1.0, 0.8, 0.2); // yellow
+    vec3 colorB = vec3(0.2, 0.4, 1.0); // blue
     vec3 colorC = vec3(0.8, 0.2, 0.6); // magenta
     vec3 colorD = u_Color.rgb;          // user color
 
