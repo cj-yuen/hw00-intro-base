@@ -40,6 +40,12 @@ void main()
     fs_Col = vs_Col;                         // Pass the vertex colors to the fragment shader for interpolation
     fs_Pos = vs_Pos;
 
+    // Non-uniform trigonometric deformation
+    vec4 modPos = vs_Pos;
+    modPos.x += 0.2 * sin(u_Time + vs_Pos.y * 3.0);
+    modPos.y += 0.2 * cos(u_Time + vs_Pos.z * 3.0);
+    modPos.z += 0.2 * sin(u_Time * 0.5 + vs_Pos.x * 4.0);
+
     mat3 invTranspose = mat3(u_ModelInvTr);
     fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);          // Pass the vertex normals to the fragment shader for interpolation.
                                                             // Transform the geometry's normals by the inverse transpose of the
@@ -48,7 +54,7 @@ void main()
                                                             // the model matrix.
 
 
-    vec4 modelposition = u_Model * vs_Pos;   // Temporarily store the transformed vertex positions for use below
+    vec4 modelposition = u_Model * modPos;   // Temporarily store the transformed vertex positions for use below
 
     fs_LightVec = lightPos - modelposition;  // Compute the direction in which the light source lies
 
