@@ -5,6 +5,13 @@
 </p>
 <p align="center">(source: Ken Perlin)</p>
 
+## Description
+The aim of this project was to build an interactive WebGL application with TypeScript as an introductory lesson to familiarize students with computer graphics programming for this course. In steps (1) and (2), students are required to review the provided starting code and learn about TypeScript and other essential topics before getting started. In step (3), students needed to add a new 'Cube' class which resulted in more familiarity with the structure of the code and the relationship between main.ts and the classes in the geometry folder. Adding the color picker in step (4) encouraged students to play around with different possible buttons and sliders that they could add from the dat.GUI library. Then in steps (5) and (6), students were allowed to try out the different noise functions they learned in class. For me personally, I was interested in adding the option to choose between either using my custom vertex shader, using my custom fragment shader, or using both which I implemented fairly easily from the dat.GUI library. 
+<p align="center">
+  <img width="360" height="360" src="https://user-images.githubusercontent.com/1758825/132532354-e3a45402-e484-499e-bfa7-2d73b9f2c946.png">
+</p>
+
+
 ## Objective
 - Check that the tools and build configuration we will be using for the class works.
 - Start learning Typescript and WebGL2
