@@ -20,8 +20,12 @@ Adding the color picker in step (4) encouraged students to play around with diff
   <img width="360" height="360" src="images/color_picker.png">
 </p>
 
-Then in steps (5) and (6), students were allowed to try out the different noise functions they learned in class. 
+Then in steps (5) and (6), students were allowed to try out the different noise functions they learned in class. This involved writing a custom fragment shader to implement 3D procedural noise for dynamic colors and also a custom vertex shader using trigonometric functions to animate the deformation of the object's geometry over time. Personally, for the fragment shader, I implemented 3D fractal Brownian motion (FBM) noise, layering multiple octaves of noise to create rich, organic surface patterns that animate smoothly over time. By varying the noise input with a time variable, I achieved dynamic, evolving color effects across the object. I also experimented with different color palettes and noise parameters. Then I used a combination of sine and cosine functions applied to the vertex positions to create a wavy, pulsating deformation of the cube geometry for my custom vertex shader. This approach produces continuous, smooth movement across the surface, making the object ripple. 
+<p align="center">
+  <img width="360" height="360" src="images/shader_display.gif">
+</p>
 
+*Live Demo Link:* https://cj-yuen.github.io/hw00-intro-base/
 
 ## Objective
 - Check that the tools and build configuration we will be using for the class works.
