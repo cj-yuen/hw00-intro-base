@@ -110,6 +110,7 @@ function main() {
     let time = performance.now() * 0.001; // time in seconds
     currentShader.setTime(time);
 
+
     if(controls.tesselations != prevTesselations)
     {
       prevTesselations = controls.tesselations;
