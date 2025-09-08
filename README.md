@@ -14,7 +14,7 @@ In step (3), students needed to add a new 'Cube' class which resulted in more fa
 
 Adding the color picker in step (4) encouraged students to play around with different possible buttons and sliders that they could add from the dat.GUI library. For me personally, I was interested in adding the option to choose between either using my custom vertex shader, using my custom fragment shader, or using both which I implemented fairly easily from the dat.GUI library. 
 <p align="center">
-  <img width="360" height="360" src="//images/cube.png">
+  <img width="360" height="360" src="/../images/cube.png">
 </p>
 
 Then in steps (5) and (6), students were allowed to try out the different noise functions they learned in class. 
