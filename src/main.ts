@@ -125,9 +125,9 @@ function main() {
       updateShader();
     }
     renderer.render(camera, currentShader, [
-      icosphere,
+      // icosphere,
       // square,
-      // cube,
+      cube,
     ], controls.color);
     stats.end();
 
